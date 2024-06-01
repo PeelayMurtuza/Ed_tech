@@ -6,6 +6,7 @@ import ContactUs from './components/header/ContactUs'
 import AboutUs from './components/header/AboutUs'
 import Catalog from './components/header/Catalog'
 import Button from './components/button/Button'
+import Code from './components/code/Code'
 
 
 function App() {
@@ -37,7 +38,9 @@ function App() {
 
         <div className="bg-gray-900 flex justify-center items-center flex-col text-white gap-6 pb-10">
 
-          <div className="">Lorem ipsum dolor sit amet consectetur</div>
+          <div className="flex justify-center items-center  pt-7">
+            <div className=" h-10 w-[244px] bg-red-400 rounded-xl flex justify-center items-center ">Become an Instructor</div>
+          </div>
           <div className="text-3xl text-white">Empower Yours Future With <span className='text-cyan-400'> Coding Skills </span> </div>
           <div className="bg-gray-900 w-[50%] flex justify-center items-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum expedita voluptatum necessitatibus quas corporis explicabo dolorem molestias cupiditate odio. Ea!</div>
 
@@ -46,8 +49,12 @@ function App() {
           </div>
 
         </div>
-        <div className=" bg-gray-900 py-5 flex justify-center items-center ">
+        <div className=" bg-gray-900 py-2 flex justify-center items-center ">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9VEN308CJcAagduojX_0Ysw7HRIhWnEFP9Q&s" className='h-[311px]' alt="video" srcset="" />
+        </div>
+
+        <div className="">
+          <Code/>
         </div>
 
 
