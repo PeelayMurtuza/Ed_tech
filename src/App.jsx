@@ -7,6 +7,7 @@ import AboutUs from './components/header/AboutUs'
 import Catalog from './components/header/Catalog'
 import Button from './components/button/Button'
 import Code from './components/code/Code'
+import Card from './components/card/Card'
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
           <div className=" text-2xl ">StudyZone</div>
 
           <div className="flex gap-10 ">
-            <NavLink to='/home' >Home</NavLink>
+            <NavLink to='/' >Home</NavLink>
             <NavLink to='/Catalog' >Catalog</NavLink>
             <NavLink to='/AboutUs' >AboutUs</NavLink>
             <NavLink to='/ContactUs' >ContactUs</NavLink>
@@ -54,7 +55,22 @@ function App() {
         </div>
 
         <div className="">
-          <Code/>
+          <Code />
+        </div>
+
+        <div className="bg-gray-900 text-white flex flex-col justify-center items-center w-full  pt-10 gap-10 ">
+          <div className="flex flex-col gap-2">
+            <p className='text-4xl'>Unlock the <span className='text-cyan-600'>Power Of Code</span></p>
+            <p className=' flex justify-center items-center  '>Learn to build Anything You imagine </p>
+          </div>
+          <div className="flex bg-gray-950 text-white w-[700px] justify-between items-center px-5 h-12 rounded-3xl gap-3 ">
+            <p className='hover:bg-yellow-950 w-20 flex justify-center items-center h-10 rounded-full'>Free</p>
+            <p className='hover:bg-yellow-950 w-44 flex justify-center items-center h-10 rounded-full' >New to coding</p>
+            <p className='hover:bg-yellow-950 w-44 flex justify-center items-center h-10 rounded-full' >Most popular </p>
+            <p className='hover:bg-yellow-950 w-44 flex justify-center items-center h-10 rounded-full' >Skill Path</p>
+            <p className='hover:bg-yellow-950 w-44 flex justify-center items-center h-10 rounded-full' >Career Path</p>
+            </div>
+          <div className=""><Card/></div>
         </div>
 
 
